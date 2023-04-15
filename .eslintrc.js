@@ -1,5 +1,4 @@
 /** @type {import('eslint').Linter.Config} */
-
 module.exports = {
   extends: ["next/core-web-vitals", "airbnb", "airbnb-typescript", "prettier"],
   parserOptions: {
@@ -7,6 +6,7 @@ module.exports = {
   },
   rules: {
     "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
   },
   overrides: [
@@ -17,4 +17,4 @@ module.exports = {
       },
     },
   ],
-}
+};
