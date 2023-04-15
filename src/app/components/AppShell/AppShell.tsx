@@ -20,7 +20,7 @@ export default function AppShell({ children }: Props) {
 
   return (
     <div>
-      <ResponsiveSidebar open={sidebarOpen}>
+      <ResponsiveSidebar open={sidebarOpen} closeSidebar={closeSidebar}>
         <Sidebar onClose={closeSidebar} />
       </ResponsiveSidebar>
 

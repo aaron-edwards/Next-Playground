@@ -5,13 +5,22 @@ type Props = {
   children: React.ReactNode;
 
   open?: boolean;
+  closeSidebar: () => void;
 };
 
-export default function ResponsiveSidebar({ children, open = false }: Props) {
+export default function ResponsiveSidebar({
+  children,
+  open = false,
+  closeSidebar,
+}: Props) {
   return (
     <>
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-50 lg:hidden" onClose={() => {}}>
+        <Dialog
+          as="div"
+          className="relative z-50 lg:hidden"
+          onClose={closeSidebar}
+        >
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -34,7 +43,7 @@ export default function ResponsiveSidebar({ children, open = false }: Props) {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="relative mr-16 flex w-full max-w-xs flex-1">
+              <Dialog.Panel className="relative mr-16 flex w-full max-w-xs flex-1 shadow-sm">
                 {children}
               </Dialog.Panel>
             </Transition.Child>
