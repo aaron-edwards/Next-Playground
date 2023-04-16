@@ -37,5 +37,10 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "2.8.7"
   },
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.5.0",
+  "dependenciesMeta": {
+    "next@13.3.0": {
+      "unplugged": true
+    }
+  }
 }

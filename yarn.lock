@@ -4690,6 +4690,9 @@ __metadata:
     react-dom: 18.2.0
     tailwindcss: 3.3.1
     typescript: 5.0.4
+  dependenciesMeta:
+    next@13.3.0:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
