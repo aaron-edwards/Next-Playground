@@ -1,5 +1,4 @@
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import { Logo } from "../Title";
 
 type Props = {
   onSidebarOpen: () => void;
@@ -17,8 +16,6 @@ export default function Header({ onSidebarOpen }: Props) {
           <span className="sr-only">Open sidebar</span>
           <Bars3Icon className="h-6 w-6" aria-hidden="true" />
         </button>
-
-        <Logo width={36} height={36} className="lg:hidden" />
       </div>
     </header>
   );
