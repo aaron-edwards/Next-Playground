@@ -43,7 +43,7 @@ export default function ResponsiveSidebar({
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="relative mr-16 flex w-full max-w-xs flex-1 shadow-sm">
+              <Dialog.Panel className="relative mr-16 flex w-full max-w-sm flex-1 shadow-sm">
                 {children}
               </Dialog.Panel>
             </Transition.Child>
@@ -51,7 +51,7 @@ export default function ResponsiveSidebar({
         </Dialog>
       </Transition.Root>
       {/* Static sidebar for desktop */}
-      <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-88 lg:flex-col">
         {children}
       </div>
     </>

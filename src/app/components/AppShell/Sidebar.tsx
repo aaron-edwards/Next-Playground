@@ -1,4 +1,5 @@
 import CloseButton from "./CloseButton";
+import Title from "../Title";
 
 type Props = {
   onClose: () => void;
@@ -6,8 +7,10 @@ type Props = {
 
 export default function Sidebar({ onClose }: Props) {
   return (
-    <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-teal-700 text-white px-6 pb-4">
-      <div className="flex h-16 shrink-0 items-center justify-end">
+    <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-teal-700 text-white px-4 pb-4">
+      <div className="flex h-16 items-center justify-between">
+        <Title title="Next Playground" />
+
         <CloseButton onClose={onClose} />
       </div>
       <nav className="flex flex-1 flex-col">Nav Menu</nav>
