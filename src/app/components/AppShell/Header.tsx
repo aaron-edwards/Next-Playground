@@ -6,7 +6,7 @@ type Props = {
 
 export default function Header({ onSidebarOpen }: Props) {
   return (
-    <header className="lg:pl-88">
+    <header>
       <div className="sticky top-0 z-40 px-4 h-16 flex items-center gap-x-4 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 shadow-sm">
         <button
           type="button"

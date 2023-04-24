@@ -19,13 +19,15 @@ export default function AppShell({ children }: Props) {
   );
 
   return (
-    <div>
+    <>
       <ResponsiveSidebar open={sidebarOpen} closeSidebar={closeSidebar}>
         <Sidebar onClose={closeSidebar} />
       </ResponsiveSidebar>
 
-      <Header onSidebarOpen={openSidebar} />
-      <main className="py-10">{children}</main>
-    </div>
+      <div className="lg:pl-88">
+        <Header onSidebarOpen={openSidebar} />
+        <main className="py-10">{children}</main>
+      </div>
+    </>
   );
 }
